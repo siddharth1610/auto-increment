@@ -13,7 +13,7 @@ const Currency_convertor_8 = () => {
         try {
           const response = await axios.get(`https://api.exchangerate-api.com/v4/latest/${fromCurrency}`
           );
-          console.log(response);
+          //console.log(response);
 
           setRates(response.data.rates);
         } catch (error) {
