@@ -11,11 +11,11 @@ function App() {
     <div className="App">
       {/* <Increment/> */}
       {/* <Random_number_3/> */}
-      {/* <TO_DO_2/> */}
+      <TO_DO_2/>
       {/* <Password_Validator_4/> */}
       {/* <Quiz_App_5/> */}
       {/* <Mobile_number_validator_6/> */}
-      <Currency_convertor_8/>
+      {/* <Currency_convertor_8/> */}
     </div>
   );
 }
