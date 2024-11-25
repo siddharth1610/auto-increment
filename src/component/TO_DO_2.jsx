@@ -10,6 +10,8 @@ const TO_DO_2 = () => {
             let newTask = { id: Date.now(), text: input, taskCompleted: false };
             setTasks([...tasks, newTask]);
             setInput('');
+            console.log(tasks);
+            
         }
     };
 
@@ -49,7 +51,7 @@ const TO_DO_2 = () => {
                     value={input}
                     onChange={(e) => setInput(e.target.value)}
                 />
-                <button onClick={editId ? handleUpdateTask : addTask}>
+                <button style={{cursor:'pointer'}} onClick={editId ? handleUpdateTask : addTask}>
                     {editId ? "Update" : "Add"}
                 </button>
             </div>
@@ -68,7 +70,7 @@ const TO_DO_2 = () => {
                             >
                                 {task.text}
                             </span>
-                            <button onClick={() => handleRemove(task.id)}>Remove</button>
+                            <button style={{cursor:'pointer'}} onClick={() => handleRemove(task.id)}>Remove</button>
                         </li>
                     ))}
                 </ol>
